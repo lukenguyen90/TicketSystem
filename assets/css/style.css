@@ -1,0 +1,101 @@
+.customSearch{
+	float: left;
+	margin-left: 5px;
+    padding: 6px 15px;
+    margin-bottom: 5px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px #ccc;
+    background: #fff;
+    position: relative;
+    background: -webkit-linear-gradient(top,#fff 0,#f3f3f3 89%,#f9f9f9 100%);
+    background: -moz-linear-gradient(top,#fff 0,#f3f3f3 89%,#f9f9f9 100%);
+    background: -ms-linear-gradient(top,#fff 0,#f3f3f3 89%,#f9f9f9 100%);
+    background: -o-linear-gradient(top,#fff 0,#f3f3f3 89%,#f9f9f9 100%);
+    background: linear-gradient(top,#fff 0,#f3f3f3 89%,#f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f9f9f9', GradientType=0);
+}
+
+.customSearch:hover{
+	cursor: pointer;
+	border: 1px solid #666;
+	background: #f3f3f3;
+    background: -webkit-linear-gradient(top,#f3f3f3 0,#e2e2e2 89%,#f4f4f4 100%);
+    background: -moz-linear-gradient(top,#f3f3f3 0,#e2e2e2 89%,#f4f4f4 100%);
+    background: -ms-linear-gradient(top,#f3f3f3 0,#e2e2e2 89%,#f4f4f4 100%);
+    background: -o-linear-gradient(top,#f3f3f3 0,#e2e2e2 89%,#f4f4f4 100%);
+    background: linear-gradient(top,#f3f3f3 0,#e2e2e2 89%,#f4f4f4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#f4f4f4', GradientType=0);
+}
+
+#datatable_fixed_column_wrapper #datatable_fixed_column_filter label{
+	float: left;
+}
+
+.bodySearch{
+    position: absolute;
+    padding: 15px;
+    border: 1px solid #999;
+    top: 100%;
+    right: 0px;
+    background: #fff;
+}
+
+.div_minifyme{
+    position: relative;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+legend.fcollapsible.selected:before{
+    content: "\f067";
+}
+
+legend.fcollapsible:before{
+    content: "\f068";
+    margin-right: 10px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+td span,
+td a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dataShow{
+    width: 46%;
+    float: right;
+    margin-right: 15px;
+}
+
+.width-100p{
+    width: 100%;
+}
+
+.form-horizontal .control-label.pull-right{
+    margin-right: 10px;
+}
+
+.ui-datepicker{
+    z-index:1151 !important;
+}
+
+.ui-autocomplete { 
+    z-index:2000 !important; 
+}
+
+ul.ColVis_collection li label{
+    overflow: hidden;
+}
+
+.table>thead>tr>th{
+    vertical-align: middle;
+}

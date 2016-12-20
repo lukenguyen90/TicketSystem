@@ -1,0 +1,326 @@
+/*todo list*/
+/*default*/
+.todo-project>li{
+  border-color: #DDD;
+  cursor: pointer;
+}
+/*hover*/
+.todo-project>.item-primary:hover{
+  border-left-color: #428bca !important;
+}
+.todo-project>.item-info:hover{
+  border-left-color: #6fb3e0 !important;
+}
+.todo-project>.item-success:hover{
+  border-left-color: #87b87f !important;
+}
+.todo-project>.item-warning:hover{
+  border-left-color: #ffb752 !important;
+}
+.todo-project>.item-danger:hover{
+  border-left-color: #d15b47 !important;
+}
+.todo-project>.item-inverse:hover{
+  border-left-color: #555 !important;
+}
+.todo-project>.item-pink:hover{
+  border-left-color: #d6487e !important;
+}
+.todo-project>.item-purple:hover{
+  border-left-color: #9585bf !important;
+}
+.todo-project>.item-yellow:hover{
+  border-left-color: #fee188 !important;
+}
+.todo-project>.item-grey:hover{
+  border-left-color: #a0a0a0 !important;
+}
+/*active*/
+.todo-project>.active:after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 4px;
+  border: 8px solid transparent;
+  border-width: 14px 10px;
+  border-right-color: #2b7dbc;
+}
+.todo-project>.item-primary.active{
+  border-left-color: #428bca !important;
+}
+.todo-project>.item-info.active{
+  border-left-color: #6fb3e0 !important;
+}
+.todo-project>.item-success.active{
+  border-left-color: #87b87f !important;
+}
+.todo-project>.item-warning.active{
+  border-left-color: #ffb752 !important;
+}
+.todo-project>.item-danger.active{
+  border-left-color: #d15b47 !important;
+}
+.todo-project>.item-inverse.active{
+  border-left-color: #555 !important;
+}
+.todo-project>.item-pink.active{
+  border-left-color: #d6487e !important;
+}
+.todo-project>.item-purple.active{
+  border-left-color: #9585bf !important;
+}
+.todo-project>.item-yellow.active{
+  border-left-color: #fee188 !important;
+}
+.todo-project>.item-grey.active{
+  border-left-color: #a0a0a0 !important;
+}
+.primary{
+  color: #428bca !important;
+}
+.info{
+  color: #6fb3e0 !important;
+}
+.success{
+  color: #87b87f !important;
+}
+.warning{
+  color: #ffb752 !important;
+}
+.danger{
+  color: #d15b47 !important;
+}
+.inverse{
+  color: #555 !important;
+}
+.pink{
+  color: #d6487e !important;
+}
+.purple{
+  color: #9585bf !important;
+}
+.yellow{
+  color: #fee188  !important;
+}
+.grey{
+  color: #a0a0a0 !important;
+}
+.dd{
+  max-width: 100%;
+}
+#todolist .dropdown-menu.dropdown-close {
+  left: 0px !important;
+}
+.status-open .dd2-handle,.status-open .dd2-content{
+  border-color: #ffb752 ;
+}
+.status-progress .dd2-handle,.status-progress .dd2-content{
+  border-color: #6fb3e0;
+}
+.status-resolved .dd2-handle,.status-resolved .dd2-content{
+  border-color: #87B87F;
+}
+.dd-subitem{
+  margin-left: 36px;
+}
+.dd-subitem .dd-handle{
+  margin-top: -5px;
+  font-weight: normal;
+}
+.dd-subitem .dd-handle label{
+  font-weight: bold;
+}
+.lbl-des{
+  z-index: 9;
+}
+.header-ticket{
+  font-size: 16px;
+  color: white;
+  margin-right: 5px;
+}
+.header-logtime{
+  font-size: 14px;
+  color: white;
+  font-style: italic;
+}
+.ticket-row .action-buttons{
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.action-buttons.active{
+  display: block;
+}
+.ticket-row:hover .action-buttons{
+  display: block;
+}
+.action-buttons>a{
+  cursor: pointer;
+}
+.action-buttons.hide{
+  display: none !important;
+}
+
+.addTask {
+  background: #F4F6F7;
+  overflow: hidden;
+  position: relative;
+  margin: 14px 0;
+  padding: 0 12px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  min-height:38px;
+}
+
+.addTask-input  {
+  background: transparent !important;
+  border: none !important;
+  padding-left: 10px !important;
+  min-height:38px;
+}
+
+.addTask-icon {
+    float: left;
+}
+
+.addTask-icon-right {
+  float:right;
+}
+
+.addTask-dd-right {
+  right: 50;
+}
+
+.addTask-popover {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-height: 15px;
+  min-width: 200px;
+  max-width: 304px;
+  z-index: 1500;
+  color: #262626;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.popover-header {
+    text-align: center;
+    font-weight: bold;
+    height: 31px;
+    padding: 4px;
+    color: #262626;
+    font-size: 14px;
+    border-bottom: 1px solid #544534;
+}
+
+.addTask-popover .arrow {
+    position: absolute;
+    border-width: 12px;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.addTask-popover .arrow {
+    left: 50%;
+    margin-left: -12px;
+    top: -23px;
+    border-color: transparent transparent #fff transparent;
+}
+
+.popover-user {
+  padding: 2px;
+}
+
+.popover-lstUsers {
+  position: relative;
+  max-height: 297px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-touch-action: none;
+  text-rendering: optimizeLegibility;
+  list-style:none;
+}
+
+.popover-lstUsers li {
+  margin-top: 5px;
+}
+
+.popover-lstUsers li:hover {
+  background: #F4F6F7;
+  cursor: pointer;
+}
+
+.popover-lstUsers li a{
+  margin-top: 5px;
+  font-weight: bold;
+  color: #262626;
+  text-decoration: none;
+}
+
+.addTask-icon , .addTask-icon-right {
+  cursor: pointer;
+  padding: 9px;
+  padding-left: 2px;
+}
+
+.assignedUser {
+    height: 25px;
+    width: 25px;
+    top: 7px;
+    right: 50px;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    cursor:pointer;
+    z-index: 2;
+}
+.input-assign-delete {
+  display: none;
+  position: absolute;
+  top: -8px;
+  right: -17px;
+  z-index: 102;
+  color: red;
+  cursor:pointer;
+}
+
+.assignedUser:hover .input-assign-delete,
+.assignedUser:hover ~ .input-assign-delete {
+  display: block;
+}
+
+.icon-delete-assign {
+    width: 16px;
+    height: 16px;
+}
+
+.ticket-donow {
+  display: block;
+}
+
+.ticket-donow .red {
+  color: red;
+}
+
+.dd2-content:hover .ticket-donow,
+.dd2-content:hover ~ .ticket-donow {
+  display: none;
+}
+/*end todo list style*/

@@ -1,0 +1,506 @@
+/*TIME USE REPORT SPECIFIC*/
+.actionBtn {
+    display: inline-block;
+    background: url(../images/reports/button_gradient.png) bottom left repeat-x;
+    padding: 2px;
+    font-size: 11px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid #ccc;
+    color: black;
+    outline: none;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px white;
+    border-radius: 3px;
+    font-weight: bold;
+    border-bottom-color: #999;
+    margin-left: 5px
+}
+
+.actionBtn:hover {
+    background: #e6e6e6
+}
+
+.showTooltip {
+    cursor: pointer
+}
+
+.selectUser {
+    background: white url(../images/reports/btns_gradient.png) repeat-x bottom left;
+    padding: 8px;
+    border: 1px solid #CCC;
+    border-bottom-color: #999;
+    position: relative
+}
+
+#dropdownIndicator, .selectUser b.caret {
+    display: block;
+    width: 20px;
+    border-left: 1px solid #CCC;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    background: url(../images/reports/caret.png) no-repeat center center
+}
+
+#user_name {
+    padding-right: 40px;
+    min-width: 180px;
+    text-align: left;
+    display: block;
+}
+
+ul.toggleUsers {
+    max-height: 300px;
+    overflow: auto
+}
+
+ul.toggleUsers li a:hover {
+    text-shadow: none;
+}
+
+ul.toggleUsers li a, .selectUser {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    min-width: 230px;
+    text-align: left
+}
+
+.multiselect-container > li > a {
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.multiselect-container > li > a:hover, .multiselect-container > li.active > a, .multiselect-container > li.active > a:hover {
+    background: #35a0ed
+}
+
+.selectUser {
+    font-weight: bold;
+}
+
+.btnSelectUser {
+    margin-left: 15px !important
+}
+
+.filtersRightSide {
+    padding-right: 0;
+    padding-right: 20px;
+}
+
+.selectUser b.caret {
+    border: none;
+    border-left: 1px solid #CCC;
+}
+
+.selectUser {
+    padding-right: 30px
+}
+
+.input-group-addon {
+    background-image: url(../images/reports/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.btn-group {
+    z-index: 1
+}
+
+.btnGroupLinks ul li {
+    list-style: none;
+    display: block;
+    float: right;
+    margin-left: 10px;
+    position: relative
+}
+
+.btnGroupLinks ul li.divider {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: url(../images/reports/vertical_separator.png) repeat-y right top;
+}
+
+.btnGroupLinks ul li a {
+    display: block;
+    padding: 7px;
+    color: #45a8ee;
+    text-shadow: 1px 1px 1px white;
+    background-image: url(../images/reports/icon_print.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 23px;
+    padding-right: 0;
+    font-weight: bold;
+    outline: 0;
+    font-size: 13px;
+}
+
+.btnGroupLinks ul li a:hover {
+    text-decoration: none;
+    color: black
+}
+
+.btnGroupLinks ul li a.exportLink {
+    background-image: url(../images/reports/icon_export.png)
+}
+
+.btnGroupLinks ul li a.exportLinkOptions {
+    background-image: url(../images/reports/icon_export_options.png)
+}
+
+.btnGroupLinks ul li a.exportLinkOptions span {
+    display: inline-block;
+    background: url(../images/reports/icon_export_options_arrow.png) no-repeat center center;
+    padding: 2px;
+    padding-left: 10px
+}
+
+.btnGroupLinks ul li a.exportLinkOptions:hover span, .btnGroupLinks ul li a.activeExport span {
+    display: inline-block;
+    background: url(../images/reports/icon_export_options_arrow_hover.png) no-repeat center center;
+    padding: 2px;
+    padding-left: 10px
+}
+
+ul.exportDropdown {
+    width: 298px;
+    background: white;
+    position: absolute;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #CCC;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: -135px;
+    display: none
+}
+
+.btnGroupLinks ul li a.exportLinkOptions {
+    line-height: 1em
+}
+
+.btnGroupLinks ul li a.activeExport {
+    color: black;
+}
+
+ul.exportDropdown li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+ul.exportDropdown li.pointer {
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    margin-left: -6px;
+    background: url(../images/reports/actions_dropdown_pointer.png) no-repeat center top;
+    display: block;
+    width: 13px;
+    height: 11px
+}
+
+ul.exportDropdown li a {
+    font-weight: normal;
+    display: block;
+    padding: 5px;
+    padding-left: 30px;
+    background-position: 8px center
+}
+
+ul.exportDropdown li a:hover {
+    color: white;
+    background-color: #35a0ed;
+    text-shadow: none
+}
+
+.btnGroupLinks ul li a.exportSubConsolidated, .btnGroupLinks ul li a.exportSubBreakdown {
+    background-image: url(../images/reports/icon_export_csv.png)
+}
+
+.btnGroupLinks ul li a.exportSubConsolidated:hover, .btnGroupLinks ul li a.exportSubBreakdown:hover {
+    background-image: url(../images/reports/icon_export_csv_hover.png)
+}
+
+.btnGroupLinks ul li a.exportSubPdf {
+    background-image: url(../images/reports/pdf_icon.png)
+}
+
+.btnGroupLinks ul li a.exportSubPdf:hover {
+    background-image: url(../images/reports/pdf_icon_hover.png)
+}
+
+/*bars*/
+.barPercents {
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.multipleUsersHolder {
+    margin-bottom: 10px;
+    background: url(../images/reports/hr_separator.png) left bottom repeat-x
+}
+
+.multipleUsersHolder h3 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+/*TIME USE REPORT SPECIFIC*/
+.timeUseBarBackground, .timeUseBackgroundNarrow {
+    height: 55px;
+    border: 1px solid #CCC;
+    position: relative;
+    background: #e6e6e6;
+    border-top-color: #b4b4b4;
+    border-radius: 4px;
+    border-right-color: #c1c1c1;
+    border-left-color: #c1c1c1;
+    box-shadow: inset 1px 1px 3px #CCC;
+    -moz-box-shadow: inset 1px 1px 3px #CCC;
+    -webkit-box-shadow: inset 1px 1px 3px #CCC;
+}
+
+.timeUseBar, .timeUseBackgroundNarrow .timeUseBar {
+    height: 55px;
+    background: url(../images/reports/bar_green_huge.png) repeat-x top left;
+    border-radius: 4px;
+    border: 1px solid #8ea074;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    border-bottom-color: #1c5400;
+    border-right-color: #306600;
+    border-left-color: #306600;
+
+}
+
+.timeUseBarBackground .timebarContainer {
+    position: absolute;
+    width: 100%;
+    left: -1px;
+    top: -1px;
+    height: 55px;
+}
+
+.timeUseBarBackground .timebar {
+    float: left;
+    height: 55px;
+}
+
+.timeUseBackgroundNarrow .timebar {
+    height: 26px;
+    margin-top: -1px;
+}
+
+.timeUseBackgroundNarrow {
+    margin-bottom: 22px;
+}
+
+.lines, .timeUseBackgroundNarrow .lines {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(../images/reports/hour_separator.png) repeat-y;
+    width: 2px;
+    height: 54px;
+    color: #999999;
+}
+
+.lines span, .timeUseBackgroundNarrow .lines span {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 50px;
+    margin-left: -25px;
+    text-align: center
+}
+
+.timeUseTotal {
+    margin-top: 0px;
+}
+
+.timeUseTotal b {
+    font-size: 55px;
+    display: inline-block;
+    padding-right: 5px
+}
+
+.hoursDisplay {
+
+}
+
+.timeUseBackgroundNarrow {
+    height: 26px
+}
+
+.timeUseBackgroundNarrow .timeUseBar {
+    height: 26px;
+    background: url(../images/reports/bar_green_normal_1px.png) repeat-x top left;
+}
+
+.timeUseBackgroundNarrow .lines {
+    height: 26px
+}
+
+.timeUseBackgroundNarrow .lines span {
+    top: 35px
+}
+
+.timeUseTotalSmaller b {
+    font-size: 40px
+}
+
+.dashboardBoxMultipleUser {
+    margin-left: 130px;
+    margin-bottom: 13px !important;
+}
+
+.dashboardBox {
+    margin-bottom: 10px
+}
+
+.pageTitleNoBorder {
+    line-height: 1.7em
+}
+
+.user-info-section {
+    width: 130px;
+    padding: 0px;
+}
+
+.contentWrapper {
+    min-height: 10px !important;
+}
+
+.td-no-users-selected {
+    background: #e3f3ff;
+    border: 1px solid #85b9e1;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tdLoadingOverlay {
+    top: 55px !important;
+}
+
+.no_users_img {
+    margin-right: 5px;
+    vertical-align: text-top;
+}
+
+span.td-status-warning {
+    background-image: url(../images/reports/alert-circle-icon-10x10.png);
+    display: inline-block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.tooltip {
+    width: 200px;
+}
+
+.td-tooltip {
+    margin-left: 3px;
+}
+
+.table-tooltip {
+    margin-top: 2px !important;
+}
+
+.users-main-tooltip {
+    margin-left: -10px;
+}
+
+.btnIndicatorWeek, .btnIndicator {
+    width: 200px
+}
+
+.dPicker, .wPicker {
+    top: 46px !important;
+    right: 306px !important
+}
+
+/* media queries for the user selection dropdowns and calendars */
+/* Large desktops and laptops */
+@media (max-width: 1334px) {
+    .filtersRightSide {
+        margin-top: 5px
+    }
+
+    .page-title {
+        float: none !important;
+    }
+
+    .btnSelectUser {
+        display: block;
+        margin-left: 0 !important;
+        float: left;
+        margin-right: 15px;
+        margin-top: 5px
+    }
+
+    .btnGroupLinks {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+
+    .wPicker, .dPicker {
+        top: 85px !important
+    }
+}
+
+@media (max-width: 1040px) {
+    .btnSelectUser button {
+        width: 70px;
+        margin-right: 0;
+    }
+
+    .date-range-item {
+        margin-left: 0px !important
+    }
+
+    .week-val, .day-val, .month-val {
+        width: 178px
+    }
+
+    #end_date, #start_date {
+        width: 101px !important
+    }
+
+    .daterangepicker {
+        margin-right: -139px;
+    }
+
+    .bootstrap-datetimepicker-widget {
+        margin-right: -10px
+    }
+}
+
+.multipleUsersHolder::after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+#for_printing {
+    display: none;
+}
+.no-float{float:left!important;}
+.btnGroupLinks-user { position: relative; right:0px; top:0px; }
